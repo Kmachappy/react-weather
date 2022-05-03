@@ -7,7 +7,7 @@ const WeatherForecast =(props)=>{
         <WeatherIcon img={props.img} />
 
         {/* props.conditon  = conditionss*/}
-        <WeatherData condition={props.conditionss} time={props.time} />
+        <WeatherData conditions={props.conditions} time={props.time} />
         </div>
     )
 }

@@ -7,7 +7,12 @@ export default function App() {
   // console.log(weatherData)
   const allWeatherData = weatherData.map((element,index)=>{
     // prop.conditionss = object
-    return  <WeatherForecast img={element.img} conditionss={element.conditions} time={element.time} key={index} />
+    return  <WeatherForecast 
+    // img={element.img} 
+    // conditionss={element.conditions} 
+    // time={element.time} 
+    {...element} 
+    key={index} />
 
   })
   
